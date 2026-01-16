@@ -1,0 +1,116 @@
+/* General Section Styling */
+#about {
+    padding: 10px 10px;
+    background-color: #f9f9f9;
+    margin-top: 20px; 
+    font-family: 'ubuntu', sans-serif;
+    scroll-margin-top: 80px;
+}
+
+/* About Container Styling */
+.profile-container {
+    display: flex;
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center;
+    gap: 10px; /* spacing between image and text */
+    max-width: 100%;
+    text-align: center; /* center the text below */
+    background: #eee;
+    margin-top: 0px; 
+}
+
+.profile-container p {
+    margin-bottom: 20px; /* pushes space below text */
+} 
+
+/* About Photo Styling */
+.profile-photo {
+    flex: 2;
+    max-width: 200px;
+}
+
+.profile-photo img {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    border-radius: 50%;
+    margin-top: 80px; 
+}
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        text-align: center;
+        padding-left: 60px;
+        padding-right: 60px;
+      
+    }
+
+    .profile-photo img {
+        width: 200px;
+        height: 200px;
+    }
+    #about {
+        padding: 50px 0px;
+    }  
+}
+
+/* About Text Styling */
+.about-text {
+    flex: 2 ;
+    max-width:600px;
+    
+}
+
+.about-text h2 {
+    font-size: 35px;
+    color: #000;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.about-text p {
+    font-size: 16px;
+    color: #000;
+    line-height: 1.6;
+    text-align: justify;
+    margin-bottom: 20px;
+    text-align: justify;
+} 
+
+/* About Container Styling */
+.about-container {
+    display: flex;
+    flex-direction: column; /* stack image and text vertically */
+    align-items: center;    /* center horizontally */
+    justify-content: center;
+    max-width: 100%;
+    margin: 0px auto;
+    text-align: center; /* center the text below */
+}
+
+.resume-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px; /* Space between icon and text */
+  background-color: #0073e6;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.resume-btn p {
+  margin: 0;
+  font-size: 16px;
+  color: white;
+}
+.resume-btn:hover {
+  background-color: #005bb5;
+}
+
